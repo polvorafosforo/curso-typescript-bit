@@ -1,40 +1,10 @@
-class Spacecraft {
-
-    constructor(public propulsor: string) {}
-
-    jumpIntoHyperSpace() {
-        console.log(`Entering hyperspace with ${this.propulsor}`);
-    }
-
-}
-
-class MilleniumFalcon extends Spacecraft implements Containership{
-
-    cargoContainers: number;
-
-    constructor(){
-        super('hyperdrive'),
-        this.cargoContainers = 2
-    }
-
-    jumpIntoHyperSpace() {
-        if(Math.random() >= 0.5){
-            super.jumpIntoHyperSpace();
-        } else {
-            console.log('Failed to jump into hyperpace!');
-        }
-    }
-
-}
-
-interface Containership {
-    cargoContainers: number
-}
+import {Spacecraft, Containership} from './base-ships';
+import {MilleniumFalcon} from './starfighters';
 
 /* Nave Básica */
 
-let ship = new Spacecraft('hyperdrive');
-ship.jumpIntoHyperSpace();
+let basicShip = new Spacecraft('hyperdrive');
+basicShip.jumpIntoHyperSpace();
 
 /* Millenium Falcon */
 
