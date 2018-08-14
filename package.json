@@ -1,0 +1,25 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "estudos angular e typescript",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/polvorafosforo/curso-angular-bit.git"
+  },
+  "author": "Arthur Lara",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/polvorafosforo/curso-angular-bit/issues"
+  },
+  "homepage": "https://github.com/polvorafosforo/curso-angular-bit#readme",
+  "dependencies": {
+    "lodash": "^4.14.2"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.116"
+  }
+}
